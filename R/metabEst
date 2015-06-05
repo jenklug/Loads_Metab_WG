@@ -10,7 +10,7 @@ lake<-'Lilli' # current lake for metabolism estimates
 # load time series metabolism data 
 doobs<-load.ts(file.path(dir,lake,paste(lake,'_doobs.txt',sep='')))
 wtr<-load.ts(file.path(dir,lake,paste(lake,'_wtr.txt',sep='')))
-# colnames(wtr)[2]<-'wtr0.1' # changing 0 meter water temp to 0.1 for Lilli 
+colnames(wtr)[2]<-'wtr0.1' # changing 0 meter water temp to 0.1 for Lilli 
 wnd<-load.ts(file.path(dir,lake,paste(lake,'_wnd.txt',sep='')))
 par<-load.ts(file.path(dir,lake,paste(lake,'_par.txt',sep='')))
 
